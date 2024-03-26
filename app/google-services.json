@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "682456591191",
+    "firebase_url": "https://library-book-due-remainder-default-rtdb.firebaseio.com",
+    "project_id": "library-book-due-remainder",
+    "storage_bucket": "library-book-due-remainder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682456591191:android:3ea88fcc431d6a7568ac12",
+        "android_client_info": {
+          "package_name": "com.example.librarybookdueremainder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwtiAfhrdzGxDQGaGMVKf4CWLChfUH3Pg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

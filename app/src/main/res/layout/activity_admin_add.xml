@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAdd">
+
+    <TextView
+        android:id="@+id/AppNameTV"
+        android:layout_width="299dp"
+        android:layout_height="64dp"
+        android:gravity="center_horizontal"
+        android:text="Library Book Due Remainder"
+        android:textColor="#673AB7"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <LinearLayout
+        android:id="@+id/NameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/AppNameTV">
+
+        <TextView
+            android:id="@+id/NameTV"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:text="Name :"
+            android:textColor="#673AB7"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/NameAddET"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#673AB7"
+            app:layout_constraintStart_toEndOf="@+id/NameTV"
+            app:layout_constraintTop_toBottomOf="@+id/AppNameTV" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/RollNumberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/NameLayout">
+
+        <TextView
+            android:id="@+id/RollNumberTV"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Roll Number :"
+            android:textColor="#673AB7"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/RollNumberET"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#673AB7"
+            app:layout_constraintStart_toEndOf="@+id/RollNumberTV"
+            app:layout_constraintTop_toBottomOf="@+id/NameLayout" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/BookNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RollNumberLayout">
+
+        <TextView
+            android:id="@+id/BookNameTV"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Book Name :"
+            android:textColor="#673AB7"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/BookNameET"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#673AB7"
+            app:layout_constraintStart_toEndOf="@+id/BookNameTv"
+            app:layout_constraintTop_toBottomOf="@+id/RollNumberLayout" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/DateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/BookNameLayout">
+
+        <TextView
+            android:id="@+id/DateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return Date  :"
+            android:textColor="#673AB7"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/DateET"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#673AB7"
+            app:layout_constraintStart_toEndOf="@+id/NameTV"
+            app:layout_constraintTop_toBottomOf="@+id/AppNameTV"
+            android:layout_marginStart="20dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/Addbtn"
+        android:layout_width="138dp"
+        android:layout_height="50dp"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.934" />
+</androidx.constraintlayout.widget.ConstraintLayout>
