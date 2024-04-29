@@ -123,6 +123,38 @@
             app:layout_constraintTop_toBottomOf="@+id/RollNumberRemoveLayout" />
 
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/BookIdLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/BookNameRemoveLayout">
+
+        <TextView
+            android:id="@+id/BookIdTV"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:text="Book Id :"
+            android:textColor="#673AB7"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/BookIdRemoveET"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#673AB7"
+            app:layout_constraintStart_toEndOf="@+id/BookIdTv"
+            app:layout_constraintTop_toBottomOf="@+id/BookNameLayout" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/removebtn"
@@ -134,5 +166,5 @@
         app:layout_constraintHorizontal_bias="0.82"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.825" />
+        app:layout_constraintVertical_bias="0.851" />
 </androidx.constraintlayout.widget.ConstraintLayout>
